@@ -27,5 +27,5 @@ path = "~/Desktop/Unix_in_Ruby/"
 `mkdir -p #{path}Book`
 (1..5).each do |n|
   `touch 'Book/Chapter_#{n}.txt'`
-  # `cat txt.txt > 'Book/Chapter_#{n}.txt'`
+  `cat txt.txt > 'Book/Chapter_#{n}.txt'`
 end
