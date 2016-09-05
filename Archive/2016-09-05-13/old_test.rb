@@ -23,6 +23,7 @@ tm=Time.new.strftime("%Y-%m-%d-%H")
 path = "~/Desktop/Unix_in_Ruby/"
 `mkdir -p #{path}Archive/#{tm}`
 `cp test.rb #{path}Archive/#{tm}`
+`mv  #{path}Archive/#{tm}/test.rb #{path}Archive/#{tm}/old_test.rb`
 
 `mkdir -p #{path}Book`
 (1..5).each do |n|
